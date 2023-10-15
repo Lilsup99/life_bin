@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        #navegador ul{
+            list-style-type: none;
+            text-align: center;
+            padding-top: 15px;
+         }
+
+         #navegador li{
+            display: inline;
+            text-align: center;
+            margin: 0 10px 0 0;
+         }
+
+         #navegador li a {
+            padding: 2px 7px 2px 7px;
+            color: #666;
+            background-color: #eeeeee;
+            border: 1px solid #ccc;
+            text-decoration: none;
+         }
+    </style>
+
+</head>
+<body>
+  
+    <div id="navegador">
+        <ul>
+            <li><a href="{% url 'home' %}">Principal</a></li>
+            <li><a href="{% url 'team' %}">Equipo de trabajo</a></li>
+            <li><a href="{% url 'model' %}">Life Bin</a></li>
+            <li><a href="#">Dasboards</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+    display: grid; 
+}
+
+h1 {
+    font-family: 'Ubuntu';
+}
+#cont1{
+    margin-right: 170px;
+}
+
+#cont1 h1{
+    text-align: left;
+    font-size: 50px;
+    color: aqua;
+}
+
+#cont1 p{
+    color: antiquewhite;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    width: 700px;
+}
+
+#cont2 h2{
+    text-align: center;
+    font-size: 35px;
+    color: aqua;
+    font-family: 'Ubuntu';
+    padding-bottom: 1px;
+}
+
+#cont2 p{
+    color: antiquewhite;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    align-content: center;
+}
+
+#cont2{
+    display: grid;
+}
+
+#list{
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: 'Ubuntu';
+    background-color:darkslategray;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+#result{
+    display:list-item;
+}
+

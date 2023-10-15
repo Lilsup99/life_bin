@@ -1,0 +1,83 @@
+#principal { 
+
+    color: dodgerblue;
+    font-family: "Merriweather";
+    border-left: 10px solid blue;
+    background-color: black;
+    font-weight: 100;
+}
+
+body{
+    background-color: rgba(144,173,205,255);
+    display: grid;
+    
+}
+
+#texto h1 {
+    font-family: "Merriweather";
+    color: rgba(12,54, 87, 255);
+    font-size: 50px;
+    padding: 1em;
+    padding-left: 50px;
+    width: 450px;
+    margin-right: 50px;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+#texto1 h1{
+    margin-top: 1px;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: "Merriweather";
+    color: rgba(12,54, 87, 255);
+    font-size: 60px;
+    padding-top: 155px;
+
+
+}
+
+#texto p {
+    color: rgba(12,54, 87, 255);
+    font-size: 25px;
+    padding-right: 550px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+#texto1 p{
+    color: rgba(12,54, 87, 255);
+    font-size: 35px;
+    text-align: right;
+    margin-left: 100px;
+    padding-right: 50px;
+
+}
+#foto1{
+    float: right;
+    size: 2px;
+    vertical-align: middle;
+}
+#foto2{
+    float: left;
+    size: 2px;
+    vertical-align: middle;
+}
+#texto2 p{
+    margin-top: 200px;
+    font-family: "Merriweather";
+    font-size: larger;
+    
+}
+
+#texto2 h1{
+    color: rgba(12,54, 87, 255);
+    font-size: 35px;
+    font-family: "Merriweather";
+    text-align: center;
+    margin-left: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+

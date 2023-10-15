@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgba(144,173,205,255);
+            }
+
+            img{
+                width: 980px
+            }
+        </style>
+        
+    </head>
+    <body>
+        {% include "barra_nav.html" %}
+        <center>
+        <img id="foto" src="{% static 'img\equipo.png' %}" alt="img1" align="center">
+        </center>
+    </body>
+</html>

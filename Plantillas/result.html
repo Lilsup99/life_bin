@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <style>
+            h1{
+                color: aqua;
+                font-family: 'Ubuntu';
+                font-size:45px;
+            }
+            h2{
+                color: aqua;
+                font-family: 'Ubuntu';
+                font-size:20px;
+            }
+
+            p{
+                color: aqua;
+                font-family: 'Ubuntu';
+            }
+            
+            li{
+                color: aqua;
+                font-family: 'Ubuntu';
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        {% if pred == 0 %}
+            <center>
+            <h1>{{pais}}</h1>
+            </center>
+            <h2>El pais esta ok</h2>
+            <p>Datos analizados de {{pais}}:</p>
+            <ol>
+                <li>Esperanza de vida: {{life_expectancy}}</li>
+                <li>Crecimiento poblacional(%): {{population_growth}}</li>
+                <li>nivel de matriculacion en las universidades: {{school_enrollment}}</li>
+                <li>usuarios de internet(%): {{internet_users}}</li>
+                <li>nivel PIB: {{gdp}}</li>
+                <li>inflacion: {{inflation}}</li>
+            </ol>
+            <p>dichos registros son correspondientes al año {{year}}</p>
+        {% elif pred == 1 %}
+            <center>   
+            <h1>{{pais}}</h1>
+            </center>
+            <h2>el pais NO esta OK</h2>
+            <p>Datos analizados de {{pais}}:</p>
+            <ol>
+                <li>Esperanza de vida: {{life_expectancy}}</li>
+                <li>Crecimiento poblacional(%): {{population_growth}}</li>
+                <li>nivel de matriculacion en las universidades: {{school_enrollment}}</li>
+                <li>usuarios de internet(%): {{internet_users}}</li>
+                <li>nivel PIB: {{gdp}}</li>
+                <li>inflacion: {{inflation}}</li>
+            </ol>
+            <p>dichos registros son correspondientes al año {{year}}</p>
+        {% else %}
+            <h2>{{pais}}</h2>             
+        {% endif %}
+    
+    </body>
+</html>

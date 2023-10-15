@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" href="{% static 'styles.css' %}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <style>
+            #boton_modelo{
+                border: none; 
+                color: black; 
+                padding: 14px 28px;
+                margin-top: 50px;
+                margin-bottom: 25px; 
+                cursor: pointer; 
+                border-radius: 5px;
+            
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="principal"> 
+            {% include "barra_nav.html" %}
+            <center> 
+            <h1> Proyeccion esperanza de vida</h1>
+            </center>
+            <h3>Proyecto grupal</h3>
+        </div>
+
+        <div id="texto">
+            <img id="foto1" src="{% static 'img\Captura.PNG' %}" alt="img1" align="right">
+            <h1>Crear oportunidades con Life-Bin</h1>
+            <p> 
+                Life-Bin es un proyecto de investigacion con el objetivo de brindar informacion
+                util respecto a  la esperanza de vida a nivel mundial, donde hacemos estudio de distintos
+                factores: socio-ecomicos, politicos, salud, educacion, etc.
+            </p>
+        </div>
+
+        <div id="texto1">
+            <center>
+            <h1>Acerca del proyecto</h1>
+            </center>
+
+            <p>
+                <img id="foto2" src="{% static 'img\Captura1.PNG' %}" align="left">
+                Life-Bin es un modelo de Machine Learning basado en seleccion binaria que utiliza
+                datos demograficos y de salud para hacer estimaciones Principalmente en el indice de esperanza de 
+                vida en grupos o regiones especificas.
+            </p>
+        </div>
+
+        <center>
+            <div id="texto2">
+                <p>¿POR QUE UTILIZAR Life-Bin?</p>
+
+                <h1> Principalmente ayuda a las aseguradoras a identificar
+                    oportunidades de negocio, como nuevas poblaciones para
+                    expandir su negocio.
+                </h1>
+                <img id="foto3" src="{% static 'img\Captura3.PNG' %}" align="center">
+            </div>
+        </center>
+
+    <center>
+        <a href="{% url 'model' %}">
+            <button id="boton_modelo">Comenzar</button>
+        </a>
+    </center>
+
+    </body>
+</html>

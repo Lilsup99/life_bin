@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+    <head> 
+        <link  rel="stylesheet" href="{% static 'stylesLB.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        {% include "barra_nav.html" %}   
+        <div id='cont1'>
+            <h1>Life_Bin: Descubre nuevas oportunidades.</h1>
+            <p>Con ayuda del modelo de aprendizaje automatico Life_Bin puedes 
+                determinar si un pais es un potencial lugar de inversion
+                para tu empresa de seguros de vida.
+            </p>
+        </div>
+
+        <div id='cont2'>
+            <h2>¿Como Funciona Life_bin?</h2>
+            <center>
+            <p>Se analizan datos determinantes que definen un pais ideal para el objetivo 
+                propuesto.
+            </p>
+            </center>
+        </div>
+
+        <div>
+            <ul id='list'>
+                <li>Indice de esperanza de vida.</li>
+                <li>Crecimiento poblacional.</li>
+                <li>Nivel de PIB.</li>
+                <li>Acceso a internet</li>
+                <li>Inflacion</li>
+                <li>Nivel de acceso a la educacion</li>
+            </ul>
+        </div>
+        <center>
+        <div id="result">
+        <form method="post" action="#">
+            {% csrf_token %}
+            <label for="pais">PAIS:</label>
+            <input type="text" id="pais" name="pais" required>
+        
+            <input type="submit" value="Life_Bin">
+        </form>
+        </div>
+    </center>
+            {% include 'result.html'%}
+          
+          
+    </body>
+</html>
