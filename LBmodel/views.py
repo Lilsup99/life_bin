@@ -9,7 +9,7 @@ MODELO DE MACHINE LEARNING, PARA MAS INFO LEER DOCUMENTACION
 https://github.com/Lilsup99/indice_esperanza_vida/blob/main/Modelo%20ML/README4ML.md
 '''
 
-data = pd.read_csv('static\Lb_data.csv')
+data = pd.read_csv('LBmodel\Lb_data.csv')
 
 X = data[['Life expectancy at birth, total (years)',
           'Population growth (annual %)', 'School enrollment, tertiary (% gross)',
