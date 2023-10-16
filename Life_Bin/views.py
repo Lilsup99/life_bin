@@ -9,4 +9,4 @@ def home(request):
     return render(request, 'esperanza.html',{})
 
 def team(request):
-    return render(request,'equipo.html',{})
+    return render(request,'Plantillas\esperanza.html',{})
