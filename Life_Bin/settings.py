@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Life_Bin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\\Users\ManVi\Desktop\Life-Bins\Life_Bin\Plantillas'],
+        'DIRS': ['Plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
