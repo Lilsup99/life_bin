@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="{% static 'tstyle.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        {% include "barra_nav.html" %}
+        <h1>Equipo de trabajo</h1>
+        <ul>
+            <li>
+                <div id='daniel'>
+                    <img src="{% static 'img\equipo_final.png' %}">
+                    <p>
+                        Daniel Vielma. Machine Learning Engineer<br>
+                        danvilpra@gmail.com<br>
+                        https://www.linkedin.com/in/daniel-vielma-10bb42269/
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div id='maria'>
+                    <img src="{% static 'img\CC_20231015_134014.png' %}">
+                    <p>
+                        Maria Mosquera. Machine Learning Engineer|Scrum master<br>
+                        danvilpra@gmail.com<br>
+                        https://www.linkedin.com/in/fernandamosquera/
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div id='leo'>
+                    <img src="{% static 'img\CC_20231015_135901.png' %}" styles='size:50em'>
+                    <p>
+                        Leonardo Prada. Data Engineer<br>
+                        pradago02@gmail.com<br>
+                        https://www.linkedin.com/in/leonardoprada-ye/
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div id='ivon'>
+                    <img src="{% static 'img\CC_20231015_135431.png' %}" styles='size:50em'>
+                    <p>
+                        Ivonn Gonzalez. Data Analyst<br>
+                        ivonnganzalez824@gmail.com<br>
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div id='carlos'>
+                    <img src="{% static 'img\CC_20231015_135736.png' %}" styles='size:50em'>
+                    <p>
+                        Carlos Villareal. Data Engineer<br>
+                        villareal.fx@gmail.com<br>
+                    </p>
+                </div>
+            </li>            
+        </ul>
+    </body>
+</html>
